@@ -2,6 +2,8 @@
 
 ## Introduction
 
+This is my spinoff of this wonderful Service Cloud Custom Split Activity that was created by Markus Slabina.
+
 This is a basic example of a custom journey builder split activity that reads data from Salesforce Service Cloud and is ready to be deployed to heroku. As of April 2017 this is necessary as a workaround as decision split evaluation for changes in Service Cloud don't evaluate correctly if there are multiple instances of the queried object for one single contact (contact and object have a one-to-many relationship) and even if there are multiple paths to one attribute in Contact Builder / Data Designer. I debugged and tested this issue together with Dave Hacker, who is Sr. Technical Product Manager, Data Products at Salesforce Marketing Cloud. He confirmed that his team is working on a fix, where the desired path in contact model can be selected in the Marketing Cloud user interface. However this fix won't be released before the end of the 2017. Furthermore the team at Salesforce Marketing Cloud is currently working on documenting the issue and known workarounds in this [Salesforce Success Article](https://success.salesforce.com/issues_view?id=a1p3A000000f6KZQAY&title=query-engine-needs-to-accept-pathing-information-in-filter).
 
 As mentioned in the Marketing Cloud documentation under [Create Custom Activities](https://developer.salesforce.com/docs/atlas.en-us.noversion.mc-app-development.meta/mc-app-development/creating-activities.htm), it is possible to build custom splits, so I thought I'll just go ahead and give it a shot and as it turned out this solved the problem and can be used as a workaround until the path selection feature is released.
