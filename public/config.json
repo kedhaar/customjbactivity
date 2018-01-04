@@ -80,7 +80,7 @@
 		}
 	},
 	"edit": {
-		"url": "https://<URL OF THE SERVER RUNNING THE BACKEND>/index.html",
+		"url": "https://eweed-customjbactivity.herokuapp.com/index.html",
 		"height": 200,
 		"width": 500
 	}
