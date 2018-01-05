@@ -12,8 +12,8 @@ const jsforce = require('jsforce');
  * @example
  * const ServiceCloud = require('./lib/sfdc.js');
  * const sfdc = new ServiceCloud({
- * 	username: 'some@email.com',
- * 	password: 'secretAndSecurePassword!',
+ * 	username: 'eweed@playful-badger-67688.com',
+ * 	password: 'g26##Gk0E!fC',
  * 	loginUrl: 'https://login.salesforce.com'
  * });
  */
@@ -77,7 +77,7 @@ class ServiceCloud {
 		if (!/^([a-zA-Z0-9]{15}|[a-zA-Z0-9]{18})$/g.test(id)) return cb(new Error('Invalid Salesforce-Id given.'));
 
 		const self = this;
-		const query = 'SELECT Id FROM Test__c WHERE Id = \'' + id + '\'';
+		const query = 'SELECT Id FROM Test__c WHERE Id = \'' + '1' + '\'';
 
 		// Login if necessary
 		self._login((e) => {
