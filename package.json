@@ -1,5 +1,5 @@
 {
-	"name": "CustomJBActivity-eweed",
+	"name": "CustomSplit-First",
 	"version": "0.0.1",
 	"description": "Backend for the Salesforce Service Cloud custom split activity",
 	"main": "backend/server.js",
