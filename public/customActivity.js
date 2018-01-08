@@ -59,7 +59,7 @@ define(function (require) {
 		payload['arguments'] = payload['arguments'] || {};
 		payload['arguments'].execute = payload['arguments'].execute || {};
 		payload['arguments'].execute.inArguments = [{
-			'serviceCloudId': '{{Event.' + eventDefinitionKey + '.\"Test__c:Id\"}}'
+			'serviceCloudId': '{{Event.' + eventDefinitionKey + '.\"Test__c:choice__c\"}}'
 		}];
 
 		payload['metaData'] = payload['metaData'] || {};
