@@ -38,7 +38,7 @@ app.post('/activity/execute', (req, res) => {
 			sfdc.retrieveFieldOfObject(serviceCloudId, (err, fieldValue) => {
 				if (err) {
 					console.error(err);
-					return res.status(200).json({branchResult: '2'});
+					return res.status(500).end();
 				}
 
 				// Check the returned value to make the decision which path should be
