@@ -45,7 +45,7 @@
 				"branchResult": "1"
 			},
 			"metaData": {
-				"label": "Path 1"
+				"label": "My Path 1"
 			}
 		},
 		{
@@ -53,7 +53,7 @@
 				"branchResult": "2"
 			},
 			"metaData": {
-				"label": "Path 2"
+				"label": "My Path 2"
 			}
 		}
 	],
