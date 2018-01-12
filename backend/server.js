@@ -29,12 +29,7 @@ app.post('/activity/execute', (req, res) => {
 
 		if (decoded && decoded.inArguments && decoded.inArguments.length > 0) {
 			let serviceCloudId = Object.values(decoded.inArguments[0]);
-			console.log("inARguments:" + Object.values(decoded.inArguments[0]));
 			
-
-			// TODO: Read the Service Cloud object's Id from inArguments here and
-			// write it to the serviceCloudId variable
-
 			// Call the function that retrieves desired data from Service Cloud
 			sfdc.retrieveFieldOfObject(serviceCloudId, (err, fieldValue) => {
 				if (err) {
@@ -75,6 +70,6 @@ app.use(express.static(Path.join(__dirname, '..', 'public')));
 
 // Start the server and listen on the port specified by heroku or defaulting to 12345
 app.listen(process.env.PORT || 12345, () => {
-	console.log('Service Cloud customsplit backend is now running!');
+	console.log('Customsplit backend is now running!');
 });
 
