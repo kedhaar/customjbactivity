@@ -44,10 +44,10 @@ app.post('/activity/execute', (req, res) => {
 				// Check the returned value to make the decision which path should be
 				// followed and return the branchResult accordingly.
 				if (fieldValue === 1) {
-					console.log("Path 1:"fieldValue);
+					console.log("Path 1:" + fieldValue);
 					return res.status(200).json({branchResult: '1'});
 				} else {
-					console.log("Path 2:"fieldValue);
+					console.log("Path 2:" + fieldValue);
 					return res.status(200).json({branchResult: '2'});
 				}
 			});
