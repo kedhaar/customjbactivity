@@ -13,7 +13,7 @@ const jsforce = require('jsforce');
  * const ServiceCloud = require('./lib/sfdc.js');
  * const sfdc = new ServiceCloud({
  * 	username: 'eweed@playful-badger-67688.com',
- * 	password: 'g26##Gk0E!fC',
+ * 	password: '',
  * 	loginUrl: 'https://login.salesforce.com'
  * });
  */
