@@ -28,9 +28,9 @@ app.post('/activity/execute', (req, res) => {
 		}
 
 		if (decoded && decoded.inArguments && decoded.inArguments.length > 0) {
-			let serviceCloudId = 'a0P4100000CB1NM';
-			console.log("inARguments:" + Object.values(decoded.inArguments));
-			console.log("Second Line one:" + Object.values(decoded.inArguments[0]));
+			let serviceCloudId = Object.values(decoded.inArguments[0]);
+			console.log("inARguments:" + Object.values(decoded.inArguments[0]));
+			
 
 			// TODO: Read the Service Cloud object's Id from inArguments here and
 			// write it to the serviceCloudId variable
