@@ -95,7 +95,7 @@ class ServiceCloud {
 				}
 
 				if (r.records.length === 1) {
-					return cb(undefined, r.records[0].choice__c);
+					return cb(undefined, r.records[0].id);
 				} else {
 					return cb(new Error('No unique result returned.'));
 				}
