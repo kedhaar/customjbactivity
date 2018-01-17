@@ -7,8 +7,8 @@
 	"type": "RESTDECISION",
 	"lang": {
 		"en-US": {
-			"name": "Service Cloud Custom Split",
-			"description": "Custom Split activity that makes a decision based on data from Service Cloud"
+			"name": "Sales Cloud Custom Split",
+			"description": "Custom Split activity that makes a decision based on data from Sales Cloud"
 		}
 	},
 	"workflowApiVersion": "1.1",
@@ -54,6 +54,14 @@
 			},
 			"metaData": {
 				"label": "My Path 2"
+			}
+		},
+		{
+			"arguments": {
+				"branchResult": "3"
+			},
+			"metaData": {
+				"label": "My Path 3"
 			}
 		}
 	],
