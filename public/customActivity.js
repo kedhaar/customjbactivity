@@ -5,8 +5,7 @@ define(function (require) {
 	var connection = new Postmonger.Session();
 	var payload = {};
 	var steps = [
-		{'key': 'eventdefinitionkey', 'label': 'Event Definition Key'},
-		{'key': 'mynewvariable', 'label': 'My New Variable'}
+		{'key': 'eventdefinitionkey', 'label': 'Event Definition Key'}
 	];
 	var currentStep = steps[0].key;
 
@@ -60,8 +59,7 @@ define(function (require) {
 		payload['arguments'] = payload['arguments'] || {};
 		payload['arguments'].execute = payload['arguments'].execute || {};
 		payload['arguments'].execute.inArguments = [{
-			'serviceCloudId': '{{Event.' + eventDefinitionKey + '.\"Test__c:Id\"}}',
-			'myVariable': '' + mynewvariable + ''
+			'serviceCloudId': '{{Event.' + eventDefinitionKey + '.\"Test__c:Id\"}}'
 		}];
 
 		payload['metaData'] = payload['metaData'] || {};
