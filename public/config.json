@@ -37,7 +37,8 @@
 		}
 	},
 	"wizardSteps": [
-		{"key": "eventdefinitionkey", "label": "Event Definition Key"}
+		{"key": "eventdefinitionkey", "label": "Event Definition Key"},
+		{"key": "mynewvariable", "label": "My New Variable"}
 	],
 	"outcomes": [
 		{
