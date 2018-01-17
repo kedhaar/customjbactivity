@@ -29,7 +29,7 @@ app.post('/activity/execute', (req, res) => {
 
 		if (decoded && decoded.inArguments && decoded.inArguments.length > 0) {
 			let serviceCloudId = Object.values(decoded.inArguments[0]);
-			let myCustomVariable = Object.values(decoded.inArguments[1]);
+			
 			
 			// Call the function that retrieves desired data from Service Cloud
 			sfdc.retrieveFieldOfObject(serviceCloudId, (err, fieldValue) => {
@@ -46,7 +46,7 @@ app.post('/activity/execute', (req, res) => {
 				} 
 				else if (myCustomVariable == 5) {
 					
-					return res.status(200).json(branchResult: '2'});	
+					return res.status(200).json({branchResult: '2'});	
 				}
 				else {
 					
