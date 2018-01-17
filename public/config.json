@@ -7,7 +7,7 @@
 	"type": "RESTDECISION",
 	"lang": {
 		"en-US": {
-			"name": "Sales Cloud Custom Split",
+			"name": "Service Cloud Custom Split",
 			"description": "Custom Split activity that makes a decision based on data from Sales Cloud"
 		}
 	},
