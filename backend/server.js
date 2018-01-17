@@ -44,13 +44,9 @@ app.post('/activity/execute', (req, res) => {
 					
 					return res.status(200).json({branchResult: '1'});
 				} 
-				else if (myCustomVariable == 5) {
-					
-					return res.status(200).json({branchResult: '2'});	
-				}
 				else {
 					
-					return res.status(200).json({branchResult: '3'});
+					return res.status(200).json({branchResult: '2'});	
 				}
 			});
 		} else {
