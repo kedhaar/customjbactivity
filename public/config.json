@@ -56,14 +56,6 @@
 			"metaData": {
 				"label": "My Path 2"
 			}
-		},
-		{
-			"arguments": {
-				"branchResult": "3"
-			},
-			"metaData": {
-				"label": "My Path 3"
-			}
 		}
 	],
 	"userInterfaces": {
