@@ -16,6 +16,7 @@ define(function (require) {
 	function initialize (data) {
 		if (data) {
 			payload = data;
+			console.log(JSON.stringify(payload));
 		}
 	}
 
