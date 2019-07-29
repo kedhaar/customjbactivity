@@ -23,9 +23,6 @@ define(function (require) {
 	function initialize (data) {
 		if (data) {
 			payload = data;
-			var winid = payload['arguments'].execute.inArguments;
-			console.log("hello boy "+JSON.stringify(winid));
-			//console.log(JSON.stringify(payload));
 		}
 	}
 
@@ -76,6 +73,8 @@ define(function (require) {
 
 		payload['metaData'] = payload['metaData'] || {};
 		payload['metaData'].isConfigured = true;
+		var winid = {{Contact.Attribute.BluedotLocationKE.SubscriberKey}}
+			console.log("hello boy "+JSON.stringify(winid));
 
 		
 
