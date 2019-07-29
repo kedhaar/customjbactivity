@@ -89,5 +89,4 @@
 		"height": 200,
 		"width": 500
 	}
-	console.log(JSON.stringify(winid))
 }
