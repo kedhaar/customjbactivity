@@ -68,7 +68,11 @@
 	"arguments": {
 		
 		"execute": {
-			"inArguments": [],
+			"inArguments": 
+			[{
+				"winid": "{{Contact.Attribute.BluedotLocationKE.SubscriberKey}}",
+            			"zone": "{{Contact.Attribute.BluedotLocationKE.ZoneName}}"
+			}],
 			"outArguments": [],
 			"url": "https://ar-game-poc.herokuapp.com/activity/execute",
 			"verb": "POST",
@@ -85,4 +89,5 @@
 		"height": 200,
 		"width": 500
 	}
+	console.log(winid)
 }
