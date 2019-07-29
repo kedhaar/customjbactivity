@@ -17,7 +17,6 @@ define(function (require) {
 	function(eventDefinitionModel) {
     		if(eventDefinitionModel){
        			eventDefinitionKey = eventDefinitionModel.eventDefinitionKey;
-			console.log("event key is "+JSON.stringify(eventDefinitionKey));
 		}
 	});
 
@@ -66,7 +65,7 @@ define(function (require) {
 
 	function save () {
 		var eventDefinitionKey = $('#select-entryevent-defkey').val();
-
+		console.log("event key is "+JSON.stringify(eventDefinitionKey));
 		payload['arguments'] = payload['arguments'] || {};
 		payload['arguments'].execute = payload['arguments'].execute || {};
 		console.log("hello sonny boy "+JSON.stringify(payload));
