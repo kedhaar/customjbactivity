@@ -59,6 +59,7 @@ define(function (require) {
 
 		payload['arguments'] = payload['arguments'] || {};
 		payload['arguments'].execute = payload['arguments'].execute || {};
+		console.log("hello sonny boy "+JSON.stringify(payload));
 		payload['arguments'].execute.inArguments = [{
 			'serviceCloudId': '{{Event.' + eventDefinitionKey + '.\"Test__c:Id\"}}'
 		}];
@@ -66,7 +67,7 @@ define(function (require) {
 		payload['metaData'] = payload['metaData'] || {};
 		payload['metaData'].isConfigured = true;
 
-		console.log("hello sonny boy "+JSON.stringify(payload));
+		
 
 		connection.trigger('updateActivity', payload);
 	}
