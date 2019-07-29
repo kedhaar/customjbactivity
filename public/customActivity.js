@@ -16,7 +16,9 @@ define(function (require) {
 	function initialize (data) {
 		if (data) {
 			payload = data;
-			console.log(JSON.stringify(payload));
+			var winid = payload['arguments'].execute.inArguments;
+			console.log("hello boy "+JSON.stringify(winid));
+			//console.log(JSON.stringify(payload));
 		}
 	}
 
@@ -60,10 +62,9 @@ define(function (require) {
 		payload['arguments'] = payload['arguments'] || {};
 		payload['arguments'].execute = payload['arguments'].execute || {};
 		console.log("hello sonny boy "+JSON.stringify(payload));
-		var winid = payload['arguments'].execute.inArguments;
-		console.log("hello boy "+JSON.stringify(winid));
-		//payload['arguments'].execute.inArguments = [{
-		//	'serviceCloudId': '{{Event.' + eventDefinitionKey + '.\"Test__c:Id\"}}'
+		
+		payload['arguments'].execute.inArguments = [{
+			'serviceCloudId': '{{Event.' + eventDefinitionKey + '.\"Test__c:Id\"}}'
 		}];
 
 		payload['metaData'] = payload['metaData'] || {};
