@@ -4,7 +4,7 @@
 		"icon": "images/monopolygreen2.png",
 		"iconSmall": "images/monopolygreen2.png"
 	},
-	"type": "RESTDECISION",
+	"type": "REST",
 	"lang": {
 		"en-US": {
 			"name": "Claim Code",
