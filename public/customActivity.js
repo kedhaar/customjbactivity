@@ -12,6 +12,14 @@ define(function (require) {
 	$(window).ready(function () {
 		connection.trigger('ready');
 	});
+	
+	connection.on('requestedTriggerEventDefinition',
+	function(eventDefinitionModel) {
+    		if(eventDefinitionModel){
+       			eventDefinitionKey = eventDefinitionModel.eventDefinitionKey;
+			console.log("event key is "+JSON.stringify(eventDefinitionKey));
+		}
+	});
 
 	function initialize (data) {
 		if (data) {
