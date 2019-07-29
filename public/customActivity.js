@@ -73,7 +73,7 @@ define(function (require) {
 
 		payload['metaData'] = payload['metaData'] || {};
 		payload['metaData'].isConfigured = true;
-		var winid = {{Contact.Attribute.BluedotLocationKE.SubscriberKey}}
+		var winid = "{{Contact.Attribute.BluedotLocationKE.SubscriberKey}}"
 			console.log("hello boy "+JSON.stringify(winid));
 
 		
