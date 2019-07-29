@@ -7,29 +7,29 @@
 	"type": "RESTDECISION",
 	"lang": {
 		"en-US": {
-			"name": "Service Cloud Custom Split",
-			"description": "Custom Split activity that makes a decision based on data from Sales Cloud"
+			"name": "Claim Code",
+			"description": "Custom activity that claims an available code and send it to iWin API"
 		}
 	},
 	"workflowApiVersion": "1.1",
 	"configurationArguments": {
-		"applicationExtensionKey": "C4jypOhKkN_7ujjlG2kUzZuGNiK6NtbayR9wE_NcgsdUuBWGRG__jUBpt0nhY5vgje59y4IBuZ7eu5xtKDVHE2G-1vee9h0oQ373i9kQdb6H0b1FU1VEJhB5Umraw3dqksuB2-gV9oICyksiXT_1GrK4EHMsY5QlZxRz1y_0JTiXHVLBxL46yD7cNOCx4x6BHyNugVB-2A23PnLOlWAdeNS4cvA7-E8htCvyXNaw_4X2cOdVYL4etxTXE3_yow2",
+		"applicationExtensionKey": "ff0510c9-a075-4fb1-acef-5b2e659db722",
 		"save": {
-			"url": "https://eweed-customjbactivity.herokuapp.com/activity/save",
+			"url": "https://ar-game-poc.herokuapp.com/activity/save",
 			"verb": "POST",
 			"body": "",
 			"useJwt": true,
 			"customerKey": "customjbsalt"
 		},
 		"publish": {
-			"url": "https://eweed-customjbactivity.herokuapp.com/activity/publish",
+			"url": "https://ar-game-poc.herokuapp.com/activity/publish",
 			"verb": "POST",
 			"body": "",
 			"useJwt": true,
 			"customerKey": "customjbsalt"
 		},
 		"validate": {
-			"url": "https://eweed-customjbactivity.herokuapp.com/activity/validate",
+			"url": "https://ar-game-poc.herokuapp.com/activity/validate",
 			"verb": "POST",
 			"body": "",
 			"useJwt": true,
@@ -70,7 +70,7 @@
 		"execute": {
 			"inArguments": [],
 			"outArguments": [],
-			"url": "https://eweed-customjbactivity.herokuapp.com/activity/execute",
+			"url": "https://ar-game-poc.herokuapp.com/activity/execute",
 			"verb": "POST",
 			"body": "",
 			"header": "",
@@ -81,7 +81,7 @@
 		}
 	},
 	"edit": {
-		"url": "https://eweed-customjbactivity.herokuapp.com/index.html",
+		"url": "https://ar-game-poc.herokuapp.com/index.html",
 		"height": 200,
 		"width": 500
 	}
