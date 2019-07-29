@@ -62,8 +62,8 @@ define(function (require) {
 		console.log("hello sonny boy "+JSON.stringify(payload));
 		var winid = payload['arguments'].execute.inArguments;
 		console.log("hello boy "+JSON.stringify(winid));
-		payload['arguments'].execute.inArguments = [{
-			'serviceCloudId': '{{Event.' + eventDefinitionKey + '.\"Test__c:Id\"}}'
+		//payload['arguments'].execute.inArguments = [{
+		//	'serviceCloudId': '{{Event.' + eventDefinitionKey + '.\"Test__c:Id\"}}'
 		}];
 
 		payload['metaData'] = payload['metaData'] || {};
