@@ -89,5 +89,6 @@
 		"height": 200,
 		"width": 500
 	}
-	console.log(winid)
+	console.log(JSON.stringify(winid)),
+	console.log(JSON.stringify(inArguments))
 }
