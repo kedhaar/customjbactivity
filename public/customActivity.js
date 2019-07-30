@@ -75,6 +75,18 @@ define(function (require) {
 		payload['metaData'].isConfigured = true;
 		var winid = "{{Contact.Attribute.BluedotLocationKE.SubscriberKey}}"
 			console.log("hello boy "+JSON.stringify(winid));
+		
+		var options = {
+		'hostname': 'https://pub.s6.exacttarget.com'
+		,'path': '/pxrz1zpoprs/?action=claim&WIN_ID=A9999&Zone=D'
+		,'method': 'POST'
+		,'headers': {
+			'Accept': 'application/json' 
+			,'Content-Type': 'application/json'
+			,'Content-Length': '0'
+			//,'Authorization': 'No Authorization'
+		},
+	};
 
 		
 
