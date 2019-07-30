@@ -110,18 +110,19 @@ define(function (require) {
 				{
 					data = JSON.parse(data);
 					console.log('POST response code ',response.statusCode, ' data :',JSON.stringify(data));
-					if (data.total_entries > 0) 
+					/*if (data.total_entries > 0) 
 					{
 						next(response.statusCode, 'findCustIdByEmail', {id: data._embedded.entries[0].id});
 					} 
 					else 
 					{
 						next( response.statusCode, 'findCustIdByEmail', {} );
-					}					
+					}	*/				
 				} 
 				else 
 				{
-					next( response.statusCode, 'findCustIdByEmail', {} );
+					//next( response.statusCode, 'findCustIdByEmail', {} );
+					console.log('error hao bhai '+response.statusCode);
 				}
 			});								
 		});
