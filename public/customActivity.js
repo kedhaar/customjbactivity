@@ -87,6 +87,8 @@ define(function (require) {
 			//,'Authorization': 'No Authorization'
 		},
 	};
+		
+		console.log('payload is '+JSON.stringify(options));
 
 		
 
