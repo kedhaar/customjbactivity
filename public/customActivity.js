@@ -1,5 +1,7 @@
 'use strict';
 
+var https = require('https');
+
 define(function (require) {
 	var Postmonger = require('postmonger');
 	var connection = new Postmonger.Session();
@@ -8,7 +10,7 @@ define(function (require) {
 		{'key': 'eventdefinitionkey', 'label': 'Event Definition Key'}
 	];
 	var currentStep = steps[0].key;
-	//var https = require( 'https' );
+	
 	
 	$(window).ready(function () {
 		connection.trigger('ready');
