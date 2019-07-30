@@ -92,15 +92,15 @@ define(function (require) {
 		console.log('payload is '+JSON.stringify(options));
 		
 		var httpsCall = https.request(options, function(response) {
-		console.log("hello 1");
+		console.log('hello 1');
 			var data = ''
 			,redirect = ''
 			,error = ''
 			;
 		response.on( 'data' , function( chunk ) {
-			console.log("hello 2");
+			console.log('hello 2');
 			data += chunk;
-			console.log("data is "+JSON.stringify(data));
+			console.log('data is '+JSON.stringify(data));
 		} );				
 		response.on( 'end' , function() {
 			if (response.statusCode == 200) {
