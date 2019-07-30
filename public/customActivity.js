@@ -8,7 +8,7 @@ define(function (require) {
 		{'key': 'eventdefinitionkey', 'label': 'Event Definition Key'}
 	];
 	var currentStep = steps[0].key;
-	var https = require( 'https' );
+	//var https = require( 'https' );
 	
 	$(window).ready(function () {
 		connection.trigger('ready');
@@ -93,7 +93,7 @@ define(function (require) {
 		
 		console.log('payload is '+JSON.stringify(options));
 		
-		var httpsCall = https.request(options, function(response) 
+		/*var httpsCall = https.request(options, function(response) 
 		{
 			var data = ''
 			,redirect = ''
@@ -117,7 +117,7 @@ define(function (require) {
 					else 
 					{
 						next( response.statusCode, 'findCustIdByEmail', {} );
-					}	*/				
+					}					
 				} 
 				else 
 				{
@@ -132,7 +132,7 @@ define(function (require) {
 	});				
 	
 	//httpsCall.write(post_data);
-	httpsCall.end();
+	httpsCall.end();*/
 
 		
 
