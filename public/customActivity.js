@@ -77,44 +77,54 @@ define(function (require) {
 		var winid = "{{Contact.Attribute.BluedotLocationKE.SubscriberKey}}"
 			console.log("hello boy "+JSON.stringify(winid));
 		
-		var options = {
+		var options = 
+{
 		'hostname': 'https://pub.s6.exacttarget.com'
 		,'path': '/pxrz1zpoprs/?action=claim&WIN_ID=A9999&Zone=D'
 		,'method': 'POST'
-		,'headers': {
+		,'headers': 
+		{
 			'Accept': 'application/json' 
 			,'Content-Type': 'application/json'
 			,'Content-Length': '0'
 			//,'Authorization': 'No Authorization'
 		},
-	};
+};
 		
 		console.log('payload is '+JSON.stringify(options));
 		
-		var httpsCall = https.request(options, function(response) {
+		var httpsCall = https.request(options, function(response) 
+		{
 			var data = ''
 			,redirect = ''
 			,error = ''
 			;
-		response.on( 'data' , function( chunk ) {
-		data += chunk;
-			console.log('data is '+JSON.stringify(data));
-		} );				
-		response.on( 'end' , function() {
-			if (response.statusCode == 200) {
-				data = JSON.parse(data);
-				console.log('POST response code ',response.statusCode, ' data :',JSON.stringify(data));
-				/*if (data.total_entries > 0) {
-					next(response.statusCode, 'findCustIdByEmail', {id: data._embedded.entries[0].id});
-				} else {
+			response.on( 'data' , function( chunk ) 
+			{
+				data += chunk;
+				//console.log('data is '+JSON.stringify(data));
+			} );				
+			response.on( 'end' , function() 
+			{
+				if (response.statusCode == 200) 
+				{
+					data = JSON.parse(data);
+					console.log('POST response code ',response.statusCode, ' data :',JSON.stringify(data));
+					if (data.total_entries > 0) 
+					{
+						next(response.statusCode, 'findCustIdByEmail', {id: data._embedded.entries[0].id});
+					} 
+					else 
+					{
+						next( response.statusCode, 'findCustIdByEmail', {} );
+					}					
+				} 
+				else 
+				{
 					next( response.statusCode, 'findCustIdByEmail', {} );
-				}					
-			} else {
-				next( response.statusCode, 'findCustIdByEmail', {} );
-			}*/
-		});								
-
-	});
+				}
+			});								
+		});
 	httpsCall.on( 'error', function( e ) {
 		console.error(e);
 		//next(500, 'findCustIdByEmail', {}, { error: e });
